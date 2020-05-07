@@ -6,6 +6,7 @@ function ViewProfile(props) {
     <div>
       {Object.keys(props.profile).length ? (
         <div>
+          <img src={props.profile.image} alt="..." className="image" />
           <h1>{props.profile.name} 's Profile</h1>
           <h2>category:{props.profile.category}</h2>
           <h2> categoryid:{props.profile.categoryid} </h2>
